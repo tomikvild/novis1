@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: novis-about:latest
+    container_name: novis
+    ports:
+      - "8080:80"
+    restart: unless-stopped
